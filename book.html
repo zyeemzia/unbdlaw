@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" translate="no" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="google" content="notranslate"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Bangladesh Law &amp; UN Law Book · ZyeemZia™</title>
+<meta name="description" content="The complete ZyeemZia™ Training of Trainers on International Humanitarian Law course book in English, Bangla and French: every lesson, workshops with model answers, practice exam, glossary and trainer's toolkit.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='white'/%3E%3Cpath d='M12 5h8v7h7v8h-7v7h-8v-7H5v-8h7z' fill='%23e0242f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="theme.css?v=10"><link rel="stylesheet" href="app.css?v=10">
+<script src="i18n.js?v=10"></script>
+<style>
+body{background:var(--bg)}
+.bar{position:sticky;top:0;z-index:5;display:flex;gap:10px;align-items:center;justify-content:space-between;padding:10px 16px;background:var(--bg2);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.bar .r{display:flex;gap:8px;align-items:center}
+.book{max-width:860px;margin:0 auto;padding:0 16px 80px}
+.page{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:56px 60px;margin:28px 0;box-shadow:var(--shadow);overflow-wrap:anywhere}
+@media(max-width:700px){.page{padding:26px 18px}.bar b{display:none}}
+.cover{min-height:88vh;display:flex;flex-direction:column;justify-content:center;background:var(--hero);text-align:left}
+.cover h1{font-size:clamp(34px,6vw,58px);margin:.3em 0}
+.cover .shield{max-width:260px}
+.chap{font:600 12px 'JetBrains Mono',monospace;letter-spacing:.2em;color:var(--acc);text-transform:uppercase}
+.book h2{font-size:34px}
+.book h3.lt{font-size:24px;border-top:2px solid var(--acc);padding-top:14px;margin-top:40px;color:var(--ink)}
+.toc a{display:flex;justify-content:space-between;text-decoration:none;color:var(--ink);padding:5px 0;border-bottom:1px dotted var(--line)}
+.toc a.l{padding-left:20px;color:var(--mut);font-size:14px}
+.ans{font-size:14px;color:var(--mut)}
+.akey{columns:2;font-size:14px}
+@media(max-width:600px){.akey{columns:1}}
+@media print{
+ .bar{display:none}.page{box-shadow:none;border:0;border-radius:0;margin:0;padding:18mm 16mm;page-break-after:always}
+ body,.page,.cover{background:#fff!important;color:#000}
+ details{border:0;padding:0}details>summary{list-style:none}
+ a{color:#000}
+}
+</style>
+</head>
+<body>
+<div class="bar noprint"><a href="index.html" class="btn ghost sm" id="backl">‹ Back to course</a><b class="mono" style="font-size:13px" id="bart">THE BANGLADESH LAW &amp; UN LAW BOOK</b><span class="r"><select id="lang" class="langsel" aria-label="Language"></select><button type="button" class="ib" id="theme" title="Theme" aria-label="Theme">◐</button><button type="button" class="btn sm" id="pdf">⬇ PDF</button></span></div>
+<div class="book" id="book"></div>
+<script>
+['track','workshops','m1','m2','m3','m4','m5','m6','m7','m8','m9','m10','cases'].forEach(function(f){document.write('<script src="'+ZZI18N.base+f+'.js?v=10"><\/script>')});document.write('<script src="data/abbr.js?v=10"><\/script>');document.write('<script src="data/qbank.js?v=10"><\/script>');
+</script>
+<script>
+(function(){
+const T=TRACK,M=T.meta,I=ZZI18N,t=I.t,n=I.num,esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const openAll=()=>document.querySelectorAll('details').forEach(d=>d.open=true);
+document.getElementById('backl').textContent=t('back');document.getElementById('bart').textContent=t('bookBar');
+document.getElementById('pdf').textContent='⬇ '+t('downloadPdf');document.getElementById('pdf').onclick=()=>{openAll();print()};
+const sel=document.getElementById('lang');sel.innerHTML=I.LANGS.map(l=>`<option value="${l}"${l===I.lang?' selected':''}>${I.names[l]}</option>`).join('');sel.onchange=()=>I.setLang(sel.value);
+let theme='light';try{theme=(JSON.parse(localStorage.getItem(M.storeKey))||{}).bookTheme||'light'}catch(e){}
+document.documentElement.dataset.theme=theme;
+document.getElementById('theme').onclick=()=>{const r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark';try{const s=JSON.parse(localStorage.getItem(M.storeKey))||{};s.bookTheme=r.dataset.theme;localStorage.setItem(M.storeKey,JSON.stringify(s))}catch(e){}};
+document.title=t('bookTitle',M.code)+' · ZyeemZia™';
+const yr=n(new Date().getFullYear());let h='';
+h+=`<section class="page cover"><div class="kick">ZyeemZia™ Academy · ${t('bookKick')}</div><h1>${esc(M.full)}</h1><p class="tag">${esc(M.tagline)}</p><div class="shield">${T.figure}</div><p class="muted">${t('edition')} ${yr} · unbdlaw.zyeemzia.com<br>${t('publisher')}</p></section>`;
+let toc=`<section class="page"><div class="chap">${t('contents')}</div><h2>${t('toc')}</h2><div class="toc"><a href="#intro"><span>${t('howTo')}</span></a>`;
+T.modules.forEach((m,i)=>{toc+=`<a href="#${m.id}"><span>${t('chapter')} ${n(i+1)} · ${esc(m.title)}</span></a>`+m.lessons.map((l,j)=>`<a class="l" href="#b-${l.id}"><span>${n(i+1)}.${n(j+1)} ${esc(l.title)}</span></a>`).join('')});
+toc+=`<a href="#ws"><span>${t('wsChapter')}</span></a>${T.cases&&T.cases.length?`<a href="#cases"><span>${t('caseLab')}</span></a>`:''}<a href="#cap"><span>${t('capChapter')}</span></a><a href="#plan"><span>${t('planChapter')}</span></a><a href="#exam"><span>${t('examChapter')}</span></a><a href="#glos"><span>${t('glosChapter')}</span></a><a href="#src"><span>${t('srcChapter')}</span></a></div></section>`;
+h+=toc;
+h+=`<section class="page" id="intro"><div class="chap">${t('preface')}</div><h2>${t('howTo')}</h2><p>${esc(M.lead)}</p><p>${t('howToP')}</p><div class="callout"><b class="h">${t('forTrainers')}</b>${t('forTrainersP')}</div><p class="muted" style="font-size:13px">${t('bookDisc')}</p></section>`;
+T.modules.forEach((m,i)=>{
+ h+=`<section class="page" id="${m.id}"><div class="chap">${t('chapter')} ${n(i+1)} · ${esc(I.code(m.code))}</div><h2>${esc(m.title)}</h2><p class="muted">${esc(m.sub)}</p>`;
+ m.lessons.forEach((l,j)=>{
+  h+=`<h3 class="lt" id="b-${l.id}">${n(i+1)}.${n(j+1)} ${esc(l.title)}</h3>`;
+  if(l.objectives)h+=`<div class="callout"><b class="h">${t('objectives')}</b><ul>${l.objectives.map(o=>`<li>${esc(o)}</li>`).join('')}</ul></div>`;
+  h+=l.body;
+  if(l.keys)h+=`<div class="keys">${l.keys.map(k=>`<div>✔ ${esc(k)}</div>`).join('')}</div>`;
+  if(l.trainer)h+=`<div class="callout new"><b class="h">${t('trainerNote')}</b>${l.trainer}</div>`;
+  if(l.quiz&&l.quiz.length)h+=`<details><summary>${t('checkQ',l.quiz.length)}</summary><ol>${l.quiz.map(q=>`<li>${esc(q.q)}<br><span class="ans">${t('answer')}: <b>${esc(q.o[q.a])}</b>. ${esc(q.e||'')}</span></li>`).join('')}</ol></details>`;
+  if(l.source)h+=`<p class="muted" style="font-size:12px">${t('source')}: ${esc(l.source)}</p>`;
+ });
+ h+=`</section>`;
+});
+h+=`<section class="page" id="ws"><div class="chap">${t('practice')}</div><h2>${t('wsTitle')}</h2>`+T.workshops.map((w,i)=>`<h3 class="lt">${n(i+1)}. ${esc(w.title)}</h3><p class="chap" style="font-size:11px">${esc(w.type)}</p>${w.body}${w.answers?`<details><summary>${t('modelDebrief')}</summary>${w.answers}</details>`:''}`).join('')+`</section>`;
+if(T.cases&&T.cases.length)h+=`<section class="page" id="cases"><div class="chap">${t('practice')}</div><h2>${t('caseLab')}</h2>`+T.cases.map((k,i)=>`<h3 class="lt">${n(i+1)}. ${esc(k.title)}</h3><p class="chap" style="font-size:11px">${esc(k.where)} · ${esc(k.when)} · ${k.tags.map(esc).join(' · ')}</p><h4>${t('facts')}</h4>${k.facts}${k.decide?`<div class="callout"><b class="h">⚖ ${t('yourCall')}</b>${esc(k.decide.q)}<ol type="A">${k.decide.o.map(o=>`<li>${esc(o.t)}${o.ok?' ✔':''}<br><span class="ans">${esc(o.why)}</span></li>`).join('')}</ol></div>`:''}<h4>${t('discuss')}</h4><ol>${k.questions.map(q=>`<li>${esc(q)}</li>`).join('')}</ol><details><summary>${t('solution')}</summary>${k.solution}</details>${k.trainer?`<div class="callout new"><b class="h">${t('trainerNote')}</b>${k.trainer}</div>`:''}${k.sources&&k.sources.length?`<p class="muted" style="font-size:12px">${t('sourcesL')}: ${k.sources.map(s=>esc(s.t)+' — '+esc(s.u)).join(' · ')}</p>`:''}`).join('')+`</section>`;
+const c=M.capstone;
+h+=`<section class="page" id="cap"><div class="chap">${t('assessment')}</div><h2>${esc(c.title)}</h2>${c.brief}<h3>${t('deliverables')}</h3><ol>${c.deliverables.map(d=>`<li>${esc(d)}</li>`).join('')}</ol><div class="tw"><table><tr><th>${t('criterion')}</th><th>${t('developing')}</th><th>${t('proficient')}</th><th>${t('distinguished')}</th></tr>${c.rubric.map(r=>`<tr>${r.map(x=>`<td>${esc(x)}</td>`).join('')}</tr>`).join('')}</table></div></section>`;
+h+=`<section class="page" id="plan"><div class="chap">${t('planning')}</div><h2>${t('planTitle')}</h2><h3>${t('twoDay')}</h3><div class="tw"><table><tr><th>${t('session')}</th><th>${t('day1')}</th><th>${t('day2')}</th></tr>${t('days').map((d,i)=>`<tr><td>${n(i+1)}</td><td>${esc(d[0])}</td><td>${esc(d[1])}</td></tr>`).join('')}</table></div>
+<h3>${t('sixWeek')}</h3><div class="tw"><table><tr><th>${t('week')}</th><th>${t('chapters')}</th><th>${t('activity')}</th></tr>${t('weeks').map((w,i)=>`<tr><td>${n(i+1)}</td><td>${esc(w[0])}</td><td>${esc(w[1])}</td></tr>`).join('')}</table></div></section>`;
+const ex=[...T.exam];T.modules.forEach(m=>m.lessons.forEach(l=>(l.quiz||[]).forEach(q=>{if(q.o.length>2)ex.push(q)})));(T.qbank||[]).forEach(x=>{const L=x[I.lang]||x.en;ex.push({q:L.q,o:L.o,a:x.a,e:L.e})});
+h+=`<section class="page" id="exam"><div class="chap">${t('examPrep')}</div><h2>${t('practiceExam',ex.length)}</h2><ol>${ex.map(q=>`<li style="margin:10px 0">${esc(q.q)}<br>${q.o.map((o,j)=>`<span style="display:block;padding-left:12px">${String.fromCharCode(65+j)}. ${esc(o)}</span>`).join('')}</li>`).join('')}</ol><h3>${t('answerKey')}</h3><ol class="akey">${ex.map(q=>`<li><b>${String.fromCharCode(65+q.a)}</b>. ${esc(q.e||'')}</li>`).join('')}</ol></section>`;
+h+=`<section class="page" id="glos"><div class="chap">${t('reference')}</div><h2>${t('glossary')}</h2><div class="tw"><table>${T.flash.map(f=>`<tr><th style="width:32%">${esc(f[0])}</th><td>${esc(f[1])}</td></tr>`).join('')}</table></div>
+<h3>${t('abbrev')}</h3><div class="tw"><table class="abbr">${(T.abbr||[]).slice().sort((x,y)=>x[0].localeCompare(y[0])).map(a=>`<tr><th scope="row" class="mono">${esc(a[0])}</th><td>${esc(a[I.lang==='bn'?2:I.lang==='fr'?3:1])}</td></tr>`).join('')}</table></div></section>`;
+h+=`<section class="page" id="src"><div class="chap">${t('sources')}</div><h2>${t('srcTitle')}</h2><ul>${t('srcList').map(s=>`<li>${esc(s)}</li>`).join('')}</ul>
+<p class="muted" style="margin-top:40px">© ${yr} ZyeemZia™ · ${t('publisher')} · unbdlaw.zyeemzia.com</p></section>`;
+document.getElementById('book').innerHTML=h;
+if(location.hash==='#print'){openAll();setTimeout(()=>print(),800)}
+else if(location.hash){const e=document.getElementById(location.hash.slice(1));if(e)e.scrollIntoView()}
+})();
+</script>
+</body></html>

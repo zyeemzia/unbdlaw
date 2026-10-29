@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700&display=swap');
+/* Rule-of-law theme: Bangladesh green, the red sun, UN blue, and the gold of the scales of justice */
+:root{
+  --bg:#07150f;--bg2:#0b1d16;--card:#10271e;--card2:#153226;--line:#21473a;--ink:#eef6f1;--mut:#9fbcb0;
+  --acc:#f42a41;--acc2:#ff6b7a;--teal:#6cb4ff;--gold:#e9c46a;--ok:#3fcf8e;--bad:#ff5b63;
+  --shadow:0 12px 34px rgba(0,0,0,.4);--r:16px;
+  --hero:radial-gradient(900px 420px at 90% 10%,rgba(244,42,65,.20),transparent 60%),
+         repeating-linear-gradient(0deg,rgba(108,180,255,.05) 0 1px,transparent 1px 42px),
+         repeating-linear-gradient(90deg,rgba(108,180,255,.05) 0 1px,transparent 1px 42px),
+         linear-gradient(135deg,#0d3326,#07150f);
+}
+:root[data-theme="light"]{
+  --bg:#f3f6f1;--bg2:#f9fbf7;--card:#ffffff;--card2:#e7efe8;--line:#cfdcd2;--ink:#1a2233;--mut:#5d6578;
+  --acc:#c8102e;--acc2:#006a4e;--teal:#1d5fa8;--gold:#9a6b14;--shadow:0 8px 22px rgba(60,40,10,.08);
+  --hero:radial-gradient(900px 420px at 90% 10%,rgba(200,16,46,.10),transparent 60%),
+         repeating-linear-gradient(0deg,rgba(31,95,168,.06) 0 1px,transparent 1px 42px),
+         repeating-linear-gradient(90deg,rgba(31,95,168,.06) 0 1px,transparent 1px 42px),
+         linear-gradient(135deg,#ffffff,#e3eee6);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,sans-serif}
+h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;line-height:1.2;margin:.2em 0 .5em;font-weight:700}
+a{color:var(--teal)}
+.mono{font-family:'JetBrains Mono',monospace}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+/* Bangla: fonts with full conjunct support and a little more line height */
+html[lang="bn"] body{font-family:'Noto Sans Bengali',Inter,system-ui,sans-serif;line-height:1.8}
+html[lang="bn"] h1,html[lang="bn"] h2,html[lang="bn"] h3,html[lang="bn"] h4{font-family:'Noto Serif Bengali',Fraunces,serif;line-height:1.35}
+html[lang="bn"] .kick,html[lang="bn"] .num,html[lang="bn"] .chap{letter-spacing:.04em;font-family:'Noto Sans Bengali','JetBrains Mono',monospace}
