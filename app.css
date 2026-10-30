@@ -161,3 +161,6 @@ button.chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
 .toast.on{opacity:1;transform:translate(-50%,0)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 @media print{.top,footer.ft,.noprint,.skip{display:none!important}body{background:#fff}.cert{border-color:#9c1c2c;margin:0 auto}}
+
+/* teaching figure: UN emblem */
+.emblem{display:flex;gap:16px;align-items:center;margin:4px 0 18px;padding:14px 16px;border:1px solid var(--line);border-radius:var(--r);background:var(--card2)}.emblem img{flex:0 0 auto;width:120px;height:auto;background:#fff;border-radius:12px;padding:8px}.emblem figcaption{font-size:.95em}.emblem figcaption b:first-child{display:block;margin-bottom:4px}.emblem .muted{display:block;margin-top:6px;font-size:.92em}@media(max-width:560px){.emblem{flex-direction:column;align-items:flex-start}}

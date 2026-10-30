@@ -1,4 +1,4 @@
-/* ZyeemZia™ Bangladesh Law & UN Law (UNBD-LAW) — interface language. Course content lives in data/ (English), data/bn/ and data/fr/. */
+/* ZyeemZia™ UN & Bangladesh Legal Systems (UNBD-LAW) — interface language. Course content lives in data/ (English), data/bn/ and data/fr/. */
 (function () {
   const LANGS = ['en', 'bn', 'fr'];
   const KEY = 'zz-unbdlaw-lang';
@@ -10,9 +10,9 @@
 
   const S = {
     en: {
-      langName: 'English', codes: {}, brand: 'Bangladesh Law & UN Law', home: 'Home', modules: 'Modules', workshops: 'Workshops', updates: '2026 Updates', exam: 'Exam', capstone: 'Capstone', certificate: 'Certificate', book: 'Book',
+      langName: 'English', codes: {}, brand: 'UN & Bangladesh Legal Systems', home: 'Home', modules: 'Modules', workshops: 'Workshops', updates: '2026 Updates', exam: 'Exam', capstone: 'Capstone', certificate: 'Certificate', book: 'Book',
       search: 'Search lessons…', theme: 'Theme', menu: 'Menu', progress: 'Progress', language: 'Language',
-      kicker: 'ZyeemZia™ Bangladesh Law & United Nations Law', start: 'Start the course', readBook: 'Read the book',
+      kicker: 'ZyeemZia™ United Nations & Bangladesh Legal Systems', start: 'Start the course', readBook: 'Read the book',
       sModules: 'MODULES', sLessons: 'LESSONS', sWorkshops: 'WORKSHOPS', sExam: 'EXAM BANK',
       pathTitle: 'Your path to certification', complete: 'complete', step: 'STEP',
       learn: 'Learn', lessonsDone: n => `${n} lessons`, practise: 'Practise', practiseSub: (w, f) => `${w} practical workshops · ${f} flashcards`,
@@ -35,7 +35,7 @@
       certAcademy: 'ZYEEMZIA™ ACADEMY', certOf: 'Certificate of Completion', certifies: 'This certifies that', completedThe: 'has successfully completed the',
       withDist: 'With Distinction · ', examScore: s => `Exam score ${s}%`, certId: 'Certificate ID', ceo: 'Chairman & CEO, ZyeemZia™', verifyNote: 'Issued by the course site. Keep this page as your record.',
       searchTitle: q => `Search: “${q}”`, results: n => `${n} lessons`, noResults: 'No lesson matches. Try another word.',
-      footer1: 'Bangladesh Law & United Nations Law', footer2: 'Developed & published by Zyeem Bin Zia · Dhaka, Bangladesh', policies: 'Policies', privacy: 'Privacy',
+      footer1: 'United Nations & Bangladesh Legal Systems', footer2: 'Developed & published by Zyeem Bin Zia · Dhaka, Bangladesh', policies: 'Policies', privacy: 'Privacy',
       disclaimer: 'Educational resource, not legal advice. Not affiliated with or endorsed by the Government of Bangladesh or the United Nations.',
       back: '‹ Back to course', bookBar: 'THE BANGLADESH LAW & UN LAW BOOK', contents: 'Contents', toc: 'Table of contents', howTo: 'How to use this book', preface: 'Preface', chapter: 'Chapter',
       howToP: 'Each chapter matches a module of the online course. Every lesson opens with objectives, sets out the rules with their legal references, illustrates them with cases, and closes with key takeaways, a trainer’s note where relevant, and check questions with answers.',
@@ -51,21 +51,21 @@
       srcList: ['The Constitution of the People’s Republic of Bangladesh (1972, as amended), official English and Bangla texts.', 'Laws of Bangladesh (bdlaws.minlaw.gov.bd, Legislative and Parliamentary Affairs Division): Penal Code 1860; Code of Criminal Procedure 1898; Evidence Act 1872; Code of Civil Procedure 1908; Contract Act 1872; Specific Relief Act 1877; Muslim Family Laws Ordinance 1961.', 'Supreme Court of Bangladesh (supremecourt.gov.bd): judgments of the Appellate and High Court Divisions; Dhaka Law Reports (DLR); Bangladesh Legal Decisions (BLD).', 'Charter of the United Nations (1945) and Statute of the International Court of Justice; ICJ judgments and advisory opinions (icj-cij.org).', 'Office of the UN High Commissioner for Human Rights (ohchr.org): Universal Declaration of Human Rights, ICCPR, ICESCR, CEDAW, CRC, CAT and treaty-body documents; Universal Periodic Review of Bangladesh.', 'UN peacekeeping (peacekeeping.un.org): UN Peacekeeping Operations: Principles and Guidelines (Capstone Doctrine, 2008); DPO Policy on the Protection of Civilians; Security Council mandate resolutions; Vienna Convention on the Law of Treaties (1969); UNCLOS (1982).']
     },
     bn: {
-      langName: 'বাংলা', codes: {'FOUNDATIONS':'ভিত্তি','CONSTITUTION':'সংবিধান','CRIMINAL':'ফৌজদারি','CIVIL':'দেওয়ানি','RIGHTS':'অধিকার','UN CHARTER':'জাতিসংঘ সনদ','HUMAN RIGHTS':'মানবাধিকার','PEACE OPS':'শান্তি অভিযান','INTERNATIONAL':'আন্তর্জাতিক','TRAINER':'প্রশিক্ষক','SYSTEMS':'আইনি ব্যবস্থা'}, brand: 'বাংলাদেশ আইন ও জাতিসংঘ আইন', home: 'হোম', modules: 'মডিউল', workshops: 'কর্মশালা', updates: '২০২৬ হালনাগাদ', exam: 'পরীক্ষা', capstone: 'ক্যাপস্টোন', certificate: 'সনদ', book: 'বই',
+      langName: 'বাংলা', codes: {'FOUNDATIONS':'ভিত্তি','CONSTITUTION':'সংবিধান','CRIMINAL':'ফৌজদারি','CIVIL':'দেওয়ানি','RIGHTS':'অধিকার','UN CHARTER':'জাতিসংঘ সনদ','HUMAN RIGHTS':'মানবাধিকার','PEACE OPS':'শান্তি অভিযান','INTERNATIONAL':'আন্তর্জাতিক','TRAINER':'প্রশিক্ষক','SYSTEMS':'আইনি ব্যবস্থা'}, brand: 'জাতিসংঘ ও বাংলাদেশের আইনব্যবস্থা', home: 'হোম', modules: 'মডিউল', workshops: 'কর্মশালা', updates: '২০২৬ হালনাগাদ', exam: 'পরীক্ষা', capstone: 'ক্যাপস্টোন', certificate: 'সনদ', book: 'বই',
       search: 'পাঠ খুঁজুন…', theme: 'থিম', menu: 'মেনু', progress: 'অগ্রগতি', language: 'ভাষা',
-      kicker: 'জাইমজিয়া™ বাংলাদেশ আইন ও জাতিসংঘ আইন', start: 'কোর্স শুরু করুন', readBook: 'বইটি পড়ুন',
+      kicker: 'জাইমজিয়া™ জাতিসংঘ ও বাংলাদেশের আইনব্যবস্থা', start: 'কোর্স শুরু করুন', readBook: 'বইটি পড়ুন',
       sModules: 'মডিউল', sLessons: 'পাঠ', sWorkshops: 'কর্মশালা', sExam: 'প্রশ্নব্যাংক',
       pathTitle: 'সনদ অর্জনের পথ', complete: 'সম্পন্ন', step: 'ধাপ',
       learn: 'শিখুন', lessonsDone: n => `${n}টি পাঠ`, practise: 'অনুশীলন', practiseSub: (w, f) => `${w}টি ব্যবহারিক কর্মশালা · ${f}টি ফ্ল্যাশকার্ড`,
       certify: 'যাচাই', certifySub: (n, p) => `পরীক্ষা: ${n}টি প্রশ্ন, পাস ${p}%`, getCert: 'সনদ নিন', getCertSub: 'সব পাঠ ও পরীক্ষা শেষে খুলবে',
       courseMap: 'কোর্সের মানচিত্র', module: 'মডিউল', lessonsOf: (d, n) => `${d}/${n} পাঠ`,
       bookTitle: n => `${n} বই`, bookKick: 'কোর্স বই · প্রশিক্ষক সহায়িকা · পরীক্ষা প্রস্তুতি', bookH: 'পুরো কোর্স একটি সুন্দর বইয়ে',
-      bookP: 'প্রতিটি মডিউল ও পাঠ, মডেল উত্তরসহ সব কর্মশালা, ক্যাপস্টোন, প্রশিক্ষকের টুলকিট, ব্যাখ্যাসহ পূর্ণ অনুশীলন পরীক্ষা, পরিভাষা এবং বাংলাদেশ ও জাতিসংঘ আইনের সর্বশেষ অগ্রগতি। অনলাইনে পড়ুন বা PDF হিসেবে সংরক্ষণ করুন।',
+      bookP: 'প্রতিটি মডিউল ও পাঠ, মডেল উত্তরসহ সব কর্মশালা, ক্যাপস্টোন, প্রশিক্ষকের টুলকিট, ব্যাখ্যাসহ পূর্ণ অনুশীলন পরীক্ষা, পরিভাষা এবং জাতিসংঘ ও বাংলাদেশের আইনব্যবস্থার সর্বশেষ অগ্রগতি। অনলাইনে পড়ুন বা PDF হিসেবে সংরক্ষণ করুন।',
       readOnline: 'অনলাইনে পড়ুন', downloadPdf: 'PDF ডাউনলোড', whoFor: 'কাদের জন্য',
       modulesTitle: 'মডিউল ও পাঠ', modulesLead: (m, l) => `${m}টি মডিউল · ${l}টি পাঠ। প্রতিটি পাঠ শেষে সম্পন্ন চিহ্ন দিন; অগ্রগতি এই ব্রাউজারে সংরক্ষিত থাকে।`, min: 'মিনিট',
       lessonN: (i, n) => `পাঠ ${i}/${n}`, objectives: 'শিখনফল', keyTakeaways: 'মূল শিক্ষা', trainerNote: 'প্রশিক্ষকের নোট', check: 'নিজেকে যাচাই করুন',
       source: 'উৎস উপকরণ', markComplete: 'সম্পন্ন চিহ্নিত করুন', completed: '✓ সম্পন্ন', goExam: 'পরীক্ষায় যান',
-      wsTitle: 'কর্মশালা ও ব্যবহারিক অনুশীলন', wsLead: 'বাংলাদেশ আইন ও জাতিসংঘ আইন বিষয়ে ব্যবহারিক, প্রশিক্ষক-পরিচালিত অনুশীলন। ছোট দলে কাজ করুন, তারপর মডেল উত্তর খুলুন।', workshop: 'কর্মশালা',
+      wsTitle: 'কর্মশালা ও ব্যবহারিক অনুশীলন', wsLead: 'জাতিসংঘ ও বাংলাদেশের আইনব্যবস্থা বিষয়ে ব্যবহারিক, প্রশিক্ষক-পরিচালিত অনুশীলন। ছোট দলে কাজ করুন, তারপর মডেল উত্তর খুলুন।', workshop: 'কর্মশালা',
       modelAnswers: 'মডেল উত্তর ও আলোচনার বিষয়', flashcards: 'ফ্ল্যাশকার্ড', prev: '‹ আগের', next: 'পরের ›', shuffle: 'এলোমেলো', flipHint: 'কার্ড উল্টাতে ট্যাপ করুন',
       examTitle: 'সনদ পরীক্ষা', examLead: (n, b, p, d) => `${b}টি প্রশ্নের ব্যাংক থেকে এলোমেলো ${n}টি প্রশ্ন। পাস নম্বর ${p}% · বিশেষ কৃতিত্ব ${d}%।`, best: 'সর্বোচ্চ স্কোর',
       startExam: 'নতুন পরীক্ষা শুরু করুন', submitExam: 'পরীক্ষা জমা দিন', answered: (a, n) => `${n}টির মধ্যে ${a}টির উত্তর দেওয়া হয়েছে`, unanswered: n => `এখনও ${n}টি প্রশ্নের উত্তর বাকি। তবুও জমা দেবেন?`,
@@ -76,9 +76,9 @@
       certAcademy: 'জাইমজিয়া™ একাডেমি', certOf: 'সমাপনী সনদ', certifies: 'এই মর্মে প্রত্যয়ন করা যাচ্ছে যে', completedThe: 'সফলভাবে সম্পন্ন করেছেন',
       withDist: 'বিশেষ কৃতিত্বসহ · ', examScore: s => `পরীক্ষার স্কোর ${s}%`, certId: 'সনদ আইডি', ceo: 'চেয়ারম্যান ও সিইও, জাইমজিয়া™', verifyNote: 'কোর্স সাইট কর্তৃক প্রদত্ত। এই পাতাটি আপনার রেকর্ড হিসেবে রাখুন।',
       searchTitle: q => `অনুসন্ধান: “${q}”`, results: n => `${n}টি পাঠ`, noResults: 'কোনো পাঠ মেলেনি। অন্য শব্দ দিয়ে চেষ্টা করুন।',
-      footer1: 'বাংলাদেশ আইন ও জাতিসংঘ আইন', footer2: 'উন্নয়ন ও প্রকাশনা: জাইম বিন জিয়া · ঢাকা, বাংলাদেশ', policies: 'নীতিমালা', privacy: 'গোপনীয়তা',
+      footer1: 'জাতিসংঘ ও বাংলাদেশের আইনব্যবস্থা', footer2: 'উন্নয়ন ও প্রকাশনা: জাইম বিন জিয়া · ঢাকা, বাংলাদেশ', policies: 'নীতিমালা', privacy: 'গোপনীয়তা',
       disclaimer: 'শিক্ষামূলক উপকরণ, আইনি পরামর্শ নয়। বাংলাদেশ সরকার বা জাতিসংঘের সঙ্গে সম্পৃক্ত বা তাদের অনুমোদিত নয়।',
-      back: '‹ কোর্সে ফিরুন', bookBar: 'বাংলাদেশ আইন ও জাতিসংঘ আইন বই', contents: 'সূচিপত্র', toc: 'সূচিপত্র', howTo: 'এই বই কীভাবে ব্যবহার করবেন', preface: 'ভূমিকা', chapter: 'অধ্যায়',
+      back: '‹ কোর্সে ফিরুন', bookBar: 'জাতিসংঘ ও বাংলাদেশের আইনব্যবস্থা বই', contents: 'সূচিপত্র', toc: 'সূচিপত্র', howTo: 'এই বই কীভাবে ব্যবহার করবেন', preface: 'ভূমিকা', chapter: 'অধ্যায়',
       howToP: 'প্রতিটি অধ্যায় অনলাইন কোর্সের একটি মডিউলের সঙ্গে মিলে যায়। প্রতিটি পাঠ শিখনফল দিয়ে শুরু হয়, আইনি রেফারেন্সসহ নিয়মগুলো তুলে ধরে, ঘটনার উদাহরণ দিয়ে ব্যাখ্যা করে এবং মূল শিক্ষা, প্রয়োজনে প্রশিক্ষকের নোট ও উত্তরসহ যাচাই প্রশ্ন দিয়ে শেষ হয়।',
       forTrainers: 'প্রশিক্ষকদের জন্য', forTrainersP: 'প্রশিক্ষকের নোট বক্স ও কর্মশালা অধ্যায় দেখুন: সাংবিধানিক রিট সমস্যা, ফৌজদারি ও দেওয়ানি কার্যবিধির ধাপে ধাপে অনুশীলন, মৌলিক অধিকার বিষয়ক মুট প্রশ্ন, নিরাপত্তা পরিষদের সিদ্ধান্ত গ্রহণের সিমুলেশন, মানবাধিকার চুক্তি সংস্থায় প্রতিবেদন এবং শান্তি অভিযানের ম্যান্ডেট বিশ্লেষণসহ প্রস্তুত অনুশীলন।',
       bookDisc: 'এটি বাংলাদেশের সংবিধান ও আইন, বাংলাদেশ সুপ্রিম কোর্টের রায়, জাতিসংঘের দলিল ও অন্যান্য উন্মুক্ত উৎস থেকে সংকলিত একটি শিক্ষামূলক উপকরণ। এটি আইনি পরামর্শ নয় এবং বাংলাদেশ সরকার বা জাতিসংঘের সঙ্গে সম্পৃক্ত বা তাদের অনুমোদিত নয়। আইন, চুক্তি ও নীতির বর্তমান পাঠ সবসময় যাচাই করুন।',
@@ -92,9 +92,9 @@
       srcList: ['গণপ্রজাতন্ত্রী বাংলাদেশের সংবিধান (১৯৭২, সংশোধিত), সরকারি বাংলা ও ইংরেজি পাঠ।', 'বাংলাদেশের আইন (bdlaws.minlaw.gov.bd, লেজিসলেটিভ ও সংসদ বিষয়ক বিভাগ): দণ্ডবিধি ১৮৬০; ফৌজদারি কার্যবিধি ১৮৯৮; সাক্ষ্য আইন ১৮৭২; দেওয়ানি কার্যবিধি ১৯০৮; চুক্তি আইন ১৮৭২; সুনির্দিষ্ট প্রতিকার আইন ১৮৭৭; মুসলিম পারিবারিক আইন অধ্যাদেশ ১৯৬১।', 'বাংলাদেশ সুপ্রিম কোর্ট (supremecourt.gov.bd): আপিল বিভাগ ও হাইকোর্ট বিভাগের রায়; ঢাকা ল রিপোর্টস (DLR); বাংলাদেশ লিগ্যাল ডিসিশনস (BLD)।', 'জাতিসংঘ সনদ (১৯৪৫) ও আন্তর্জাতিক বিচার আদালতের সংবিধি; আন্তর্জাতিক বিচার আদালতের রায় ও উপদেশমূলক মতামত (icj-cij.org)।', 'জাতিসংঘ মানবাধিকার হাইকমিশনারের কার্যালয় (ohchr.org): মানবাধিকারের সর্বজনীন ঘোষণা, ICCPR, ICESCR, CEDAW, CRC, CAT ও চুক্তি সংস্থার দলিল; বাংলাদেশের সর্বজনীন পর্যায়ক্রমিক পর্যালোচনা (UPR)।', 'জাতিসংঘ শান্তিরক্ষা (peacekeeping.un.org): UN Peacekeeping Operations: Principles and Guidelines (ক্যাপস্টোন ডকট্রিন, ২০০৮); বেসামরিক সুরক্ষা বিষয়ক DPO নীতি; নিরাপত্তা পরিষদের ম্যান্ডেট প্রস্তাব; চুক্তি আইন বিষয়ক ভিয়েনা কনভেনশন (১৯৬৯); UNCLOS (১৯৮২)।']
     },
     fr: {
-      langName: 'Français', codes: {'FOUNDATIONS':'FONDEMENTS','CONSTITUTION':'CONSTITUTION','CRIMINAL':'PÉNAL','CIVIL':'CIVIL','RIGHTS':'DROITS','UN CHARTER':'CHARTE DES NU','HUMAN RIGHTS':'DROITS DE L’HOMME','PEACE OPS':'OPÉRATIONS DE PAIX','INTERNATIONAL':'INTERNATIONAL','TRAINER':'FORMATEUR','SYSTEMS':'SYSTÈMES'}, brand: 'Droit bangladais et droit des Nations Unies', home: 'Accueil', modules: 'Modules', workshops: 'Ateliers', updates: 'Actualités 2026', exam: 'Examen', capstone: 'Projet final', certificate: 'Certificat', book: 'Livre',
+      langName: 'Français', codes: {'FOUNDATIONS':'FONDEMENTS','CONSTITUTION':'CONSTITUTION','CRIMINAL':'PÉNAL','CIVIL':'CIVIL','RIGHTS':'DROITS','UN CHARTER':'CHARTE DES NU','HUMAN RIGHTS':'DROITS DE L’HOMME','PEACE OPS':'OPÉRATIONS DE PAIX','INTERNATIONAL':'INTERNATIONAL','TRAINER':'FORMATEUR','SYSTEMS':'SYSTÈMES'}, brand: 'Systèmes juridiques des Nations Unies et du Bangladesh', home: 'Accueil', modules: 'Modules', workshops: 'Ateliers', updates: 'Actualités 2026', exam: 'Examen', capstone: 'Projet final', certificate: 'Certificat', book: 'Livre',
       search: 'Rechercher…', theme: 'Thème', menu: 'Menu', progress: 'Progression', language: 'Langue',
-      kicker: 'ZyeemZia™ Droit bangladais et droit des Nations Unies', start: 'Commencer le cours', readBook: 'Lire le livre',
+      kicker: 'ZyeemZia™ Systèmes juridiques des Nations Unies et du Bangladesh', start: 'Commencer le cours', readBook: 'Lire le livre',
       sModules: 'MODULES', sLessons: 'LEÇONS', sWorkshops: 'ATELIERS', sExam: 'BANQUE D’EXAMEN',
       pathTitle: 'Votre parcours vers la certification', complete: 'terminé', step: 'ÉTAPE',
       learn: 'Apprendre', lessonsDone: n => `${n} leçons`, practise: 'S’exercer', practiseSub: (w, f) => `${w} ateliers pratiques · ${f} cartes mémoire`,
@@ -117,7 +117,7 @@
       certAcademy: 'ACADÉMIE ZYEEMZIA™', certOf: 'Certificat de réussite', certifies: 'Nous certifions que', completedThe: 'a suivi avec succès la',
       withDist: 'Avec mention · ', examScore: s => `Score à l’examen : ${s} %`, certId: 'N° de certificat', ceo: 'Président-directeur général, ZyeemZia™', verifyNote: 'Délivré par le site du cours. Conservez cette page comme justificatif.',
       searchTitle: q => `Recherche : « ${q} »`, results: n => `${n} leçons`, noResults: 'Aucune leçon ne correspond. Essayez un autre mot.',
-      footer1: 'Droit bangladais et droit des Nations Unies', footer2: 'Conçu et publié par Zyeem Bin Zia · Dhaka, Bangladesh', policies: 'Politiques', privacy: 'Confidentialité',
+      footer1: 'Systèmes juridiques des Nations Unies et du Bangladesh', footer2: 'Conçu et publié par Zyeem Bin Zia · Dhaka, Bangladesh', policies: 'Politiques', privacy: 'Confidentialité',
       disclaimer: 'Ressource pédagogique, pas un avis juridique. Non affiliée au Gouvernement du Bangladesh ni à l’Organisation des Nations Unies et non approuvée par eux.',
       back: '‹ Retour au cours', bookBar: 'LE LIVRE DROIT BANGLADAIS ET DROIT DES NU', contents: 'Sommaire', toc: 'Table des matières', howTo: 'Comment utiliser ce livre', preface: 'Préface', chapter: 'Chapitre',
       howToP: 'Chaque chapitre correspond à un module du cours en ligne. Chaque leçon s’ouvre sur des objectifs, expose les règles avec leurs références juridiques, les illustre par des cas et se termine par l’essentiel à retenir, une note du formateur le cas échéant et des questions de contrôle corrigées.',
@@ -147,7 +147,7 @@
     capNote: d => `Tick each deliverable as you complete it. Complete every deliverable and score ${d}%+ in the official exam to earn your certificate with Distinction.`,
     account: 'Account', signIn: 'Sign in', acctTitle: 'Keep your progress on every device', yourAccount: 'Your account',
     acctLead: 'Signing in is optional. With a Google account, your lessons, exam record and certificate follow you to any phone or computer. Without it, everything stays in this browser only.',
-    acctIn: 'Your Bangladesh Law & UN Law progress is saved to your account and kept in sync on every device where you sign in.',
+    acctIn: 'Your UN & Bangladesh Legal Systems progress is saved to your account and kept in sync on every device where you sign in.',
     inApp: 'Google sign-in does not work inside the Facebook, Messenger or Instagram app. Open this page in Chrome or Safari (menu → Open in browser), then sign in.',
     gsiLoading: 'Loading Google sign-in…', gsiFail: 'Could not load Google sign-in. Check your internet connection and try again.',
     gsiNote: 'ZyeemZia only receives your name, email address and profile picture from Google.',
@@ -174,14 +174,14 @@
   });
   Object.assign(S.bn, {
     last: 'সর্বশেষ', resume: 'পরীক্ষা আবার শুরু করুন', drill: 'মডিউলভিত্তিক অনুশীলন (১০টি প্রশ্ন)', drillOf: m => `অনুশীলন · ${m}`, mixed: 'মিশ্র', flag: 'পর্যালোচনার জন্য চিহ্নিত করুন', flagged: 'চিহ্নিত', reviewSubmit: 'পর্যালোচনা ও জমা', qmap: 'প্রশ্ন মানচিত্র · ট্যাপ করে যান', kbdHint: 'কিবোর্ড: উত্তর দিতে A–D বা 1–4 · সরতে ← → · চিহ্নিত করতে F', pause: 'বিরতি (সংরক্ষিত)', unansweredList: 'উত্তর বাকি', flaggedList: 'চিহ্নিত', backToQ: 'প্রশ্নে ফিরুন', byModule: 'মডিউলভিত্তিক স্কোর', revise: 'পুনরায় পড়ুন', showAll: 'সব উত্তর দেখুন', wrongOnly: 'কেবল ভুলগুলো দেখুন', notAnswered: 'উত্তর দেওয়া হয়নি।', discard: 'চলমান পরীক্ষা বাদ দিয়ে নতুন শুরু করবেন?', close: 'বন্ধ করুন',
-    abbrNav: 'সংক্ষেপ', abbrTitle: 'সংক্ষিপ্ত রূপ ও আদ্যক্ষর', abbrLead: n => `বাংলাদেশ আইন, জাতিসংঘ আইন ও শান্তি অভিযানে ব্যবহৃত ${n}টি সংক্ষিপ্ত রূপ। খুঁজুন, বিভাগ অনুযায়ী বাছাই করুন, অথবা পাঠে দাগ টানা যেকোনো সংক্ষেপের ওপর পয়েন্টার রাখুন।`, abbrPh: 'সংক্ষেপ বা শব্দ খুঁজুন…', abbrCol: 'সংক্ষেপ', meaning: 'অর্থ',
+    abbrNav: 'সংক্ষেপ', abbrTitle: 'সংক্ষিপ্ত রূপ ও আদ্যক্ষর', abbrLead: n => `জাতিসংঘ ও বাংলাদেশের আইনব্যবস্থা এবং শান্তি অভিযানে ব্যবহৃত ${n}টি সংক্ষিপ্ত রূপ। খুঁজুন, বিভাগ অনুযায়ী বাছাই করুন, অথবা পাঠে দাগ টানা যেকোনো সংক্ষেপের ওপর পয়েন্টার রাখুন।`, abbrPh: 'সংক্ষেপ বা শব্দ খুঁজুন…', abbrCol: 'সংক্ষেপ', meaning: 'অর্থ',
     cat_Bangladeshlaw: 'বাংলাদেশের আইন', cat_Institutions: 'প্রতিষ্ঠান', cat_UNsystem: 'জাতিসংঘ ব্যবস্থা', cat_Treaties: 'চুক্তি', cat_Peaceoperations: 'শান্তি অভিযান', cat_Courts: 'আদালত',
     caseLab: 'কেস ল্যাব', caseN: (i, n) => `কেস ${i}/${n}`, facts: 'ঘটনা', yourCall: 'আপনার সিদ্ধান্ত', discuss: 'আলোচনার প্রশ্ন', solution: 'মডেল সমাধান: আইন, মামলা ও নীতি', sourcesL: 'উৎস', allCases: 'সব কেস',
     caseLead: n => `বাংলাদেশ সুপ্রিম কোর্ট, আন্তর্জাতিক বিচার আদালত ও জাতিসংঘের চর্চা থেকে ${n}টি বাস্তব কেস। ঘটনা পড়ুন, সিদ্ধান্ত নিন, তারপর আপনার যুক্তি মডেল সমাধানের সঙ্গে মিলিয়ে দেখুন। অধ্যয়ন করা কেস:`, goodCall: 'সঠিক সিদ্ধান্ত', rethink: 'আবার ভাবুন',
     capNote: d => `প্রতিটি কাজ শেষ হলে টিক দিন। সব কাজ সম্পন্ন করে অফিসিয়াল পরীক্ষায় ${d}% বা বেশি পেলে বিশেষ কৃতিত্বসহ সনদ পাবেন।`,
     account: 'অ্যাকাউন্ট', signIn: 'সাইন ইন', acctTitle: 'সব ডিভাইসে আপনার অগ্রগতি রাখুন', yourAccount: 'আপনার অ্যাকাউন্ট',
     acctLead: 'সাইন ইন ঐচ্ছিক। Google অ্যাকাউন্ট দিয়ে সাইন ইন করলে আপনার পাঠ, পরীক্ষার রেকর্ড ও সনদ যেকোনো ফোন বা কম্পিউটারে পাবেন। সাইন ইন না করলে সবকিছু কেবল এই ব্রাউজারেই থাকবে।',
-    acctIn: 'আপনার বাংলাদেশ আইন ও জাতিসংঘ আইন কোর্সের অগ্রগতি আপনার অ্যাকাউন্টে সংরক্ষিত হয় এবং যেসব ডিভাইসে সাইন ইন করবেন সেখানে সিঙ্ক থাকে।',
+    acctIn: 'আপনার জাতিসংঘ ও বাংলাদেশের আইনব্যবস্থা কোর্সের অগ্রগতি আপনার অ্যাকাউন্টে সংরক্ষিত হয় এবং যেসব ডিভাইসে সাইন ইন করবেন সেখানে সিঙ্ক থাকে।',
     inApp: 'Facebook, Messenger বা Instagram অ্যাপের ভেতরে Google সাইন ইন কাজ করে না। পাতাটি Chrome বা Safari-তে খুলুন (মেনু → Open in browser), তারপর সাইন ইন করুন।',
     gsiLoading: 'Google সাইন ইন লোড হচ্ছে…', gsiFail: 'Google সাইন ইন লোড করা যায়নি। ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন।',
     gsiNote: 'জাইমজিয়া Google থেকে কেবল আপনার নাম, ইমেইল ঠিকানা ও প্রোফাইল ছবি পায়।',
