@@ -1,0 +1,237 @@
+/* Case Lab: real Bangladesh and international cases with a decision point and a model solution (issue, rule, application, conclusion).
+   Facts are paraphrased for teaching. Always read the full judgment before citing it. */
+TRACK.cases = [
+{id:'c-8th', title:'Can Parliament break up the High Court Division?', where:'Bangladesh · Appellate Division', when:'Anwar Hossain Chowdhury v Bangladesh, 1989 BLD (Spl) 1', tags:['Constitution','Basic structure','Judiciary'],
+ teaser:'A constitutional amendment creates permanent High Court benches outside Dhaka. Is every amendment valid if Parliament has the votes?',
+ facts:`<p>In 1988 the Eighth Amendment rewrote Article 100 so that permanent benches of the High Court Division would sit in six regional towns, each with its own territorial jurisdiction. Lawyers challenged it. The Appellate Division, by a majority of three to one, struck down the amended Article 100, holding that Parliament’s power to amend under Article 142 does not extend to destroying the basic structure of the Constitution, which includes a unitary Supreme Court with plenary jurisdiction over the whole Republic.</p>`,
+ decide:{q:'You advise the Law Ministry in 1988. What do you say about the amendment?',o:[
+  {t:'It is safe: Article 142 lets Parliament amend any provision with a two-thirds majority.',ok:false,why:'The Court held that amending power is not unlimited: it cannot be used to destroy the basic structure.'},
+  {t:'It is vulnerable: splitting the High Court Division into regional courts may destroy the unitary judiciary that forms part of the basic structure.',ok:true,why:'This is the ratio of the case: the amended Article 100 was declared void for violating the basic structure.'},
+  {t:'It cannot be reviewed: courts have no power to examine constitutional amendments.',ok:false,why:'The Appellate Division did review the amendment and declared it void, relying on Article 7 (supremacy) and the basic structure doctrine.'}]},
+ questions:['What is the source of the basic structure doctrine in Bangladesh?','Which features did the judges list as part of the basic structure?','Why did benches with separate territorial jurisdiction matter?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Can Parliament, using Article 142, amend the Constitution so as to fragment the High Court Division?</div><div><b class="k">Rule</b>Articles 7, 94, 100, 101 and 142; the basic structure doctrine (drawing on Kesavananda Bharati, India 1973).</div><div><b class="k">Application</b>The amendment created regional courts with exclusive territories, destroying the single High Court Division with jurisdiction across the Republic. That touched the basic structure.</div><div><b class="k">Conclusion</b>The amended Article 100 was declared void. Constitutional amendments are justiciable and subject to implied limits.</div></div>`,
+ trainer:'<p>Link this case to the 5th, 13th and 16th amendment cases: the same doctrine returns each time.</p>',
+ sources:[{t:'Constitution of Bangladesh (bdlaws)',u:'http://bdlaws.minlaw.gov.bd/act-367.html'},{t:'Supreme Court of Bangladesh',u:'https://www.supremecourt.gov.bd/'}]},
+
+{id:'c-masdar', title:'Separating the lower judiciary from the executive', where:'Bangladesh · Appellate Division', when:'Secretary, Ministry of Finance v Masdar Hossain, 52 DLR (AD) 82 (1999)', tags:['Judiciary','Independence','Separation of powers'],
+ teaser:'Judicial officers object to being treated as ordinary civil servants. What does Article 22 really require?',
+ facts:`<p>Members of the judicial service challenged a pay scale and service rules that treated them as part of the general civil service. On 2 December 1999 the Appellate Division held that the judicial service is a separate service, and gave twelve directions, including separate service rules, a Judicial Service Commission and a separate pay commission. Implementation was slow; the formal separation of the magistracy took effect on 1 November 2007.</p>`,
+ decide:{q:'You sit on a government committee asked how to implement the judgment. What do you recommend?',o:[
+  {t:'Do nothing: Article 22 is a fundamental principle of state policy and is not judicially enforceable.',ok:false,why:'The Court read Article 22 together with Articles 115, 116 and 116A and the independence of the judiciary, and gave binding directions.'},
+  {t:'Create separate rules, a Judicial Service Commission and separate pay for judicial officers, and give the Supreme Court a role in their control and discipline.',ok:true,why:'This tracks the directions of the Appellate Division in Masdar Hossain.'},
+  {t:'Merge judicial officers fully into the administrative cadre for efficiency.',ok:false,why:'That is the very arrangement the Court held unconstitutional.'}]},
+ questions:['Why is a judicial officer different from an administrative officer?','How can a non-enforceable principle (Art. 22) shape a binding judgment?','What remains to be done on judicial independence today?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Is the judicial service a distinct service under the Constitution, and what does separation require?</div><div><b class="k">Rule</b>Articles 22, 115, 116, 116A, 133 and 152.</div><div><b class="k">Application</b>Judicial functions require independence from the executive; treating judges as civil servants made them dependent on ministries for pay, posting and discipline.</div><div><b class="k">Conclusion</b>The judicial service is separate; the Court issued twelve directions which the State had to implement (separation came into force in 2007).</div></div>`,
+ sources:[{t:'Supreme Court of Bangladesh',u:'https://www.supremecourt.gov.bd/'},{t:'Constitution of Bangladesh (bdlaws)',u:'http://bdlaws.minlaw.gov.bd/act-367.html'}]},
+
+{id:'c-5th', title:'Validating martial law: the Fifth Amendment', where:'Bangladesh · High Court and Appellate Divisions', when:'Bangladesh Italian Marble Works v Bangladesh; HCD 2005, AD 2010', tags:['Constitution','Martial law','Basic structure'],
+ teaser:'A factory owner fights for his property and ends up unwinding a constitutional amendment.',
+ facts:`<p>The owners of a marble factory in Old Dhaka challenged the loss of their property under a martial law regulation. The challenge reached the Fifth Amendment (1979), which had ratified all martial law proclamations and acts of 1975–1979. On 29 August 2005 the High Court Division declared the Fifth Amendment illegal in so far as it validated martial law. The Appellate Division largely upheld this on 2 February 2010, with some modifications and condonations to avoid legal chaos.</p>`,
+ decide:{q:'You are counsel for the State in 2010. What line is legally sound?',o:[
+  {t:'Martial law is a valid source of law once a regime is effective.',ok:false,why:'The courts held that martial law has no place under the Constitution and that the Constitution cannot be subordinated to proclamations.'},
+  {t:'Accept that martial law validation was unconstitutional, but ask the Court to condone past acts for the public good to avoid chaos.',ok:true,why:'The courts applied the doctrine of necessity and condonation to preserve certain past acts while declaring the validation unconstitutional.'},
+  {t:'Argue the courts cannot look at anything done before 1979.',ok:false,why:'The courts reviewed the validity of the Fifth Amendment itself, which ratified those earlier acts.'}]},
+ questions:['How did a property case become a constitutional case?','What is “condonation” and why was it used?','How did Parliament react (15th Amendment, 2011)?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Could Parliament validate martial law proclamations by constitutional amendment?</div><div><b class="k">Rule</b>Articles 7, 26, 142 and the basic structure; doctrine of necessity.</div><div><b class="k">Application</b>Martial law displaced the Constitution, which is supreme. Ratifying it afterwards could not cure that defect, but wholesale invalidation would unsettle decades of acts.</div><div><b class="k">Conclusion</b>The Fifth Amendment was declared unconstitutional to the extent it validated martial law, with condonation of some past acts.</div></div>`,
+ sources:[{t:'Supreme Court of Bangladesh',u:'https://www.supremecourt.gov.bd/'},{t:'Constitution of Bangladesh (bdlaws)',u:'http://bdlaws.minlaw.gov.bd/act-367.html'}]},
+
+{id:'c-13th', title:'The caretaker government: struck down, then revived', where:'Bangladesh · Appellate Division', when:'Abdul Mannan Khan v Bangladesh, 2011; review allowed 20 November 2025', tags:['Constitution','Elections','Democracy'],
+ teaser:'A system of unelected caretaker governments for elections is struck down in 2011 and revived in 2025.',
+ facts:`<p>The Thirteenth Amendment (1996) created a non-party caretaker government to hold general elections. In 2011 the Appellate Division, by majority, declared it void prospectively as contrary to democracy, while saying two more elections could be held under it at Parliament’s discretion. Parliament instead abolished the system through the Fifteenth Amendment (2011). After the 2024 uprising, review petitions were heard; on 20 November 2025 a full bench led by Chief Justice Syed Refaat Ahmed allowed the appeals, setting aside the 2011 judgment and reviving the caretaker provisions with prospective effect, not for the February 2026 election held under the interim government.</p>`,
+ decide:{q:'You brief foreign observers in December 2025. What is accurate?',o:[
+  {t:'The 2011 judgment remains good law; the caretaker system is gone for good.',ok:false,why:'The Appellate Division set aside that judgment on 20 November 2025.'},
+  {t:'The Appellate Division revived the caretaker provisions with prospective effect; the February 2026 election remained under the interim government.',ok:true,why:'This reflects the November 2025 judgment as reported by the Court and the Attorney General.'},
+  {t:'The caretaker system was revived by referendum, not by the courts.',ok:false,why:'The revival came through the Appellate Division’s judgment on the appeals and review petitions.'}]},
+ questions:['Can a court overrule its own constitutional judgment?','Why did the Court make its ruling prospective?','How do courts and politics interact in election-time governance?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Is a non-elected caretaker government for elections consistent with the democratic basic structure?</div><div><b class="k">Rule</b>Articles 7, 11, 58B–58E (as inserted in 1996), 142; Article 105 (review).</div><div><b class="k">Application</b>In 2011 the majority saw unelected rule as incompatible with democracy. In 2025 the Court, noting the experience of elections without a neutral government, held the earlier decision wrong.</div><div><b class="k">Conclusion</b>The 2011 judgment was set aside and the 13th Amendment provisions revived with prospective effect.</div></div>`,
+ trainer:'<p>Use this case to show that constitutional law is not static. Check the latest status before teaching.</p>',
+ sources:[{t:'Supreme Court: judgment in CA 112 of 2025 (PDF)',u:'https://www.supremecourt.gov.bd/resources/documents/3360840_CA_112of2025_13_ammendment.pdf'},{t:'Prothom Alo: AG press conference, 20 Nov 2025',u:'https://en.prothomalo.com/amp/story/bangladesh/pflmyy8ux7'}]},
+
+{id:'c-16th', title:'Who removes Supreme Court judges?', where:'Bangladesh · High Court and Appellate Divisions', when:'Advocate Asaduzzaman Siddiqui v Bangladesh; HCD 2016, AD 2017', tags:['Judiciary','Independence','Basic structure'],
+ teaser:'Parliament gives itself power to remove judges for misbehaviour or incapacity. Nine lawyers challenge it.',
+ facts:`<p>The Sixteenth Amendment (2014) restored the original 1972 Article 96, letting Parliament remove Supreme Court judges by resolution supported by two-thirds of members, replacing the Supreme Judicial Council. The High Court Division declared it unconstitutional on 5 May 2016. The Appellate Division unanimously dismissed the State’s appeal on 3 July 2017, restoring the Supreme Judicial Council. In October 2024 the Appellate Division disposed of the State’s review petition, leaving the 2017 judgment in place.</p>`,
+ decide:{q:'You are a judge on the Appellate Division in 2017. What is the strongest reason to uphold the High Court?',o:[
+  {t:'Removal by MPs, in a system where members must vote with their party (Art. 70), threatens judicial independence, part of the basic structure.',ok:true,why:'The courts relied on Article 70 and the risk of political control over judges.'},
+  {t:'Parliament may never discuss judges at all.',ok:false,why:'The case concerned removal power, not parliamentary debate.'},
+  {t:'The 1972 text was never valid.',ok:false,why:'The question was whether restoring it in 2014, in a changed system, was compatible with judicial independence.'}]},
+ questions:['Why does Article 70 matter here?','How does the Supreme Judicial Council work?','Compare removal mechanisms in other countries.'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Does parliamentary removal of judges violate judicial independence?</div><div><b class="k">Rule</b>Articles 7, 22, 70, 94(4), 96, 142; basic structure.</div><div><b class="k">Application</b>Given strict party discipline, removal would in practice lie with the executive-controlled majority.</div><div><b class="k">Conclusion</b>The 16th Amendment is void; the Supreme Judicial Council mechanism stands.</div></div>`,
+ sources:[{t:'Supreme Court of Bangladesh',u:'https://www.supremecourt.gov.bd/'},{t:'Constitution of Bangladesh (bdlaws)',u:'http://bdlaws.minlaw.gov.bd/act-367.html'}]},
+
+{id:'c-blast', title:'Arrest without warrant and remand', where:'Bangladesh · High Court and Appellate Divisions', when:'BLAST v Bangladesh, 55 DLR 363 (2003); AD 24 May 2016', tags:['Criminal','Police','Custody','Rights'],
+ teaser:'A student dies in police custody after arrest under section 54 CrPC. The courts write rules for every police station.',
+ facts:`<p>The custodial death of a student, Shamim Reza Rubel, in 1998 led BLAST and others to challenge the police practice of arrest under section 54 and remand under section 167 of the CrPC. In 2003 the High Court Division issued detailed directives. On 24 May 2016 the Appellate Division upheld them and issued guidelines for police and magistrates: identification of officers, informing relatives, reasons recorded, access to lawyers, medical checks, interrogation limits and duties of magistrates on remand.</p>`,
+ decide:{q:'You are a magistrate. Police seek seven days’ remand of a suspect arrested under s. 54, with a thin case diary. What do you do?',o:[
+  {t:'Grant it: remand is routine and helps the investigation.',ok:false,why:'The guidelines require the magistrate to examine the diary and grounds; remand is exceptional.'},
+  {t:'Examine the case diary and grounds; refuse remand if they do not justify it, consider bail or jail custody, and record reasons.',ok:true,why:'This is what the 2016 Appellate Division guidelines require of magistrates.'},
+  {t:'Send the suspect back to police without hearing him.',ok:false,why:'The person must be produced and the magistrate must act judicially, with access to counsel.'}]},
+ questions:['What safeguards apply at arrest?','What are the duties of magistrates on remand?','How does the Torture and Custodial Death (Prohibition) Act 2013 fit in?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Do police powers under ss. 54 and 167 CrPC, as practised, violate fundamental rights?</div><div><b class="k">Rule</b>Articles 27, 31, 32, 33 and 35(5); CrPC ss. 54, 167; ICCPR Arts 7 and 9.</div><div><b class="k">Application</b>Unchecked arrest and remand enabled torture and abuse; safeguards read into the law make it constitutional in operation.</div><div><b class="k">Conclusion</b>Binding guidelines for police and magistrates (Art. 111) must be followed.</div></div>`,
+ sources:[{t:'Supreme Court of Bangladesh',u:'https://www.supremecourt.gov.bd/'},{t:'BLAST',u:'https://www.blast.org.bd/'},{t:'Code of Criminal Procedure 1898 (bdlaws)',u:'http://bdlaws.minlaw.gov.bd/act-75.html'}]},
+
+{id:'c-fap20', title:'Who may sue for the public? Flood Action Plan 20', where:'Bangladesh · Appellate Division', when:'Dr Mohiuddin Farooque v Bangladesh, 49 DLR (AD) 1 (1997)', tags:['PIL','Standing','Environment'],
+ teaser:'An environmental lawyers’ group challenges a donor-funded flood project in Tangail. Is it a “person aggrieved”?',
+ facts:`<p>The Bangladesh Environmental Lawyers Association (BELA), through its secretary general Dr Mohiuddin Farooque, challenged the Flood Action Plan 20 compartmentalisation project in Tangail for ignoring environmental and livelihood effects. The High Court Division dismissed the petition for lack of standing. The Appellate Division reversed, holding that “person aggrieved” in Article 102 is not limited to those personally harmed and can include a public-spirited person or organisation acting bona fide for the public.</p>`,
+ decide:{q:'You are the court considering standing. What test do you apply?',o:[
+  {t:'Only a landowner in the project area can sue.',ok:false,why:'The Appellate Division rejected such a narrow reading.'},
+  {t:'A bona fide public-interest petitioner with sufficient interest may sue for a public wrong, even without personal injury.',ok:true,why:'This is the holding that opened the door to PIL in Bangladesh.'},
+  {t:'Anyone may sue on any issue, whatever their motive.',ok:false,why:'The Court required bona fides and sufficient interest; busybodies are excluded.'}]},
+ questions:['What makes a PIL petitioner “bona fide”?','Which later cases built on this?','How does the right to life (Art. 32) include environment?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Does BELA have standing as a “person aggrieved” under Article 102?</div><div><b class="k">Rule</b>Articles 31, 32, 102; purposive interpretation.</div><div><b class="k">Application</b>Affected communities lacked the means to sue; a bona fide organisation could represent the public interest.</div><div><b class="k">Conclusion</b>Standing granted; liberal standing became the basis of PIL in Bangladesh.</div></div>`,
+ sources:[{t:'BELA',u:'https://www.belabangla.org/'},{t:'Constitution of Bangladesh (bdlaws)',u:'http://bdlaws.minlaw.gov.bd/act-367.html'}]},
+
+{id:'c-bnwla', title:'Sexual harassment guidelines', where:'Bangladesh · High Court Division', when:'BNWLA v Bangladesh, 14 BLC 694 (2009)', tags:['Gender','Workplace','PIL'],
+ teaser:'No law defines sexual harassment at work or on campus. Can a court fill the gap?',
+ facts:`<p>The Bangladesh National Women Lawyers’ Association filed a public interest petition about sexual harassment of women and girls in workplaces and educational institutions. On 14 May 2009 the High Court Division issued binding guidelines, defining sexual harassment and requiring complaint committees (headed by a woman, with a majority of women and outside members) in all workplaces and educational institutions until Parliament legislates.</p>`,
+ decide:{q:'You are HR head of a private university. Students complain of harassment by a teacher. What do you do?',o:[
+  {t:'Handle it informally to protect the institution’s reputation.',ok:false,why:'The guidelines require a formal complaint committee and confidentiality, not suppression.'},
+  {t:'Refer it to the complaint committee required by the 2009 guidelines, protect the complainants, and act on its findings.',ok:true,why:'The guidelines are binding law under Article 111 until a statute replaces them.'},
+  {t:'Tell the students to go to the police; the university has no role.',ok:false,why:'Institutions have their own duties; criminal remedies are additional, not a substitute.'}]},
+ questions:['Can courts make guidelines where Parliament has not legislated?','What does CEDAW add?','What is the role of a complaint committee?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Can the court issue binding guidelines on sexual harassment in the absence of legislation?</div><div><b class="k">Rule</b>Articles 27, 28, 29, 31, 32, 102 and 111; CEDAW; Vishaka v Rajasthan (India 1997) as persuasive.</div><div><b class="k">Application</b>The legislative vacuum left women without remedy; guidelines give effect to fundamental rights.</div><div><b class="k">Conclusion</b>Guidelines bind all workplaces and educational institutions until a law is enacted.</div></div>`,
+ sources:[{t:'BNWLA',u:'https://bnwla.org.bd/'},{t:'Supreme Court of Bangladesh',u:'https://www.supremecourt.gov.bd/'}]},
+
+{id:'c-ershad', title:'Can a citizen rely on an unincorporated treaty?', where:'Bangladesh · Appellate Division', when:'Hussain Muhammad Ershad v Bangladesh, 21 BLD (AD) 69 (2001)', tags:['Treaties','Dualism','Passports'],
+ teaser:'A former president’s passport is withheld. He cites the UDHR and ICCPR right to leave any country.',
+ facts:`<p>Former President H.M. Ershad challenged the impounding of his passport. The Appellate Division recognised the right to movement under Article 36 and discussed international instruments. It stated that Bangladesh follows a dualist approach: international treaties do not become part of domestic law unless incorporated by legislation, but courts should look to them as an aid to interpretation and should not ignore them where domestic law is silent or ambiguous.</p>`,
+ decide:{q:'You draft submissions for a client relying on the ICCPR. What is the correct framing?',o:[
+  {t:'The ICCPR overrides any inconsistent Bangladeshi statute.',ok:false,why:'Bangladesh is dualist; unincorporated treaties do not override statutes.'},
+  {t:'Rely on the constitutional right first, and use the ICCPR to interpret it where domestic law is silent or ambiguous.',ok:true,why:'This reflects the Ershad approach to international law in domestic courts.'},
+  {t:'Treaties are irrelevant in Bangladeshi courts.',ok:false,why:'The Court accepted their interpretive value.'}]},
+ questions:['What is the difference between monism and dualism?','Where does Article 25 fit?','Give examples of incorporated treaties in Bangladesh.'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>What is the domestic effect of international human rights treaties?</div><div><b class="k">Rule</b>Articles 25, 36 and 145A; dualist practice.</div><div><b class="k">Application</b>Treaties ratified by the executive need legislation to bind courts, but may guide interpretation.</div><div><b class="k">Conclusion</b>Unincorporated treaties are interpretive aids, not directly enforceable law.</div></div>`,
+ sources:[{t:'Constitution of Bangladesh (bdlaws)',u:'http://bdlaws.minlaw.gov.bd/act-367.html'},{t:'OHCHR: Bangladesh ratification status',u:'https://tbinternet.ohchr.org/_layouts/15/TreatyBodyExternal/Treaty.aspx?CountryID=14&Lang=EN'}]},
+
+{id:'c-quota', title:'The civil service quota case, July 2024', where:'Bangladesh · High Court and Appellate Divisions', when:'Govt v Ohidul Islam and others; AD 21 July 2024', tags:['Equality','Public service','2024 uprising'],
+ teaser:'A court revives the 30% freedom fighters’ quota. Students take to the streets.',
+ facts:`<p>In 2018 the government abolished quotas for direct recruitment to first and second class posts. On 5 June 2024 the High Court Division declared that circular illegal, reviving the earlier quotas, including 30% for descendants of freedom fighters. Student protests spread and were met with lethal force. On 21 July 2024 the Appellate Division set aside the High Court judgment and directed that 93% of posts be filled on merit, with 5% for children of freedom fighters, 1% for ethnic minorities and 1% for persons with disabilities and third gender, while leaving the government free to change this. The government issued a circular on 23 July 2024. The protests grew into the uprising that ended the government on 5 August 2024.</p>`,
+ decide:{q:'You advise a recruitment body after 21 July 2024. What is your guidance?',o:[
+  {t:'Apply the old 56% quota system; the High Court revived it.',ok:false,why:'The Appellate Division set the High Court judgment aside.'},
+  {t:'Apply the 93/5/1/1 allocation in the government circular following the Appellate Division, and fill unused quota posts on merit.',ok:true,why:'This reflects the Appellate Division’s directions and the 23 July 2024 circular.'},
+  {t:'Abolish all quotas: Article 29 forbids any reservation.',ok:false,why:'Article 29(3)(a) expressly allows special provision for backward sections of citizens.'}]},
+ questions:['How does Article 29(3) allow quotas?','Is quota setting a matter for courts or the executive?','What role did the case play in the 2024 uprising?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Was the 2018 abolition of quotas lawful, and what allocation is constitutional?</div><div><b class="k">Rule</b>Articles 19, 28, 29.</div><div><b class="k">Application</b>Quotas are permitted, not required; policy belongs mainly to the executive, but the Court used Article 104 to set a reduced allocation.</div><div><b class="k">Conclusion</b>93% merit; 5% freedom fighters’ children; 1% ethnic minorities; 1% disabled and third gender.</div></div>`,
+ trainer:'<p>Handle sensitively: many participants lived through July–August 2024. Focus on law and process.</p>',
+ sources:[{t:'Supreme Court of Bangladesh',u:'https://www.supremecourt.gov.bd/'},{t:'OHCHR fact-finding report on Bangladesh protests (2025)',u:'https://www.ohchr.org/en/documents/country-reports/ohchr-fact-finding-report-human-rights-violations-and-abuses-related'}]},
+
+{id:'c-itlos', title:'Bay of Bengal: Bangladesh v Myanmar', where:'ITLOS · Hamburg', when:'Judgment, 14 March 2012 (Case No. 16)', tags:['Law of the sea','Boundaries','Peaceful settlement'],
+ teaser:'The first maritime boundary judgment of the Tribunal. How do you draw a line in a concave bay?',
+ facts:`<p>Bangladesh brought proceedings against Myanmar on the delimitation of the territorial sea, exclusive economic zone and continental shelf. On 14 March 2012 ITLOS gave its judgment, using the equidistance/relevant circumstances method and adjusting the line to reduce the cut-off effect of Bangladesh’s concave coast. Saint Martin’s Island was given a 12-mile territorial sea. The Tribunal also delimited the continental shelf beyond 200 nautical miles, creating a “grey area”.</p>`,
+ decide:{q:'You are Bangladesh’s agent. What is the strongest argument?',o:[
+  {t:'Strict equidistance must apply whatever the geography.',ok:false,why:'Strict equidistance would have cut Bangladesh off; that was Myanmar’s case.'},
+  {t:'The concavity of the coast is a relevant circumstance that requires adjusting the provisional equidistance line.',ok:true,why:'ITLOS accepted that concavity justified adjusting the line.'},
+  {t:'Bangladesh owns the whole bay by history.',ok:false,why:'No such historic title was found; delimitation follows UNCLOS Arts 15, 74 and 83.'}]},
+ questions:['What is the three-stage delimitation method?','What is the “grey area”?','How did the judgment support the blue economy?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Where is the maritime boundary between Bangladesh and Myanmar?</div><div><b class="k">Rule</b>UNCLOS Arts 15, 74, 76, 83.</div><div><b class="k">Application</b>Provisional equidistance, adjusted for concavity, then a disproportionality check.</div><div><b class="k">Conclusion</b>Boundary drawn, including beyond 200 nm, broadly favourable to Bangladesh.</div></div>`,
+ sources:[{t:'ITLOS Case No. 16',u:'https://www.itlos.org/en/main/cases/list-of-cases/case-no-16/'}]},
+
+{id:'c-pca', title:'Bay of Bengal: Bangladesh v India', where:'Annex VII arbitration · PCA', when:'Award, 7 July 2014', tags:['Law of the sea','Arbitration','Boundaries'],
+ teaser:'A second boundary, a disappearing island and a river mouth.',
+ facts:`<p>Bangladesh started arbitration under UNCLOS Annex VII against India. The tribunal, with the Permanent Court of Arbitration as registry, issued its award on 7 July 2014. It fixed the land boundary terminus, delimited the sea boundary and adjusted the line for concavity. Bangladesh received about 19,467 km² of the roughly 25,602 km² disputed area. India accepted the award.</p>`,
+ decide:{q:'A minister asks whether Bangladesh can ignore parts of the award it dislikes. Your answer?',o:[
+  {t:'Yes: arbitral awards are recommendations.',ok:false,why:'Under UNCLOS Art. 296 and Annex VII Art. 11, awards are final and binding.'},
+  {t:'No: the award is final and binding on both parties, without appeal.',ok:true,why:'Both States accepted and implemented it.'},
+  {t:'Only if the UN General Assembly approves.',ok:false,why:'The General Assembly has no role in enforcing such awards.'}]},
+ questions:['Why choose arbitration rather than ITLOS?','How did both cases together settle the Bay of Bengal?','What is a land boundary terminus?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Delimitation of the Bangladesh–India maritime boundary.</div><div><b class="k">Rule</b>UNCLOS Arts 74, 76, 83, 287, 296; Annex VII.</div><div><b class="k">Application</b>Equidistance adjusted for concavity; disproportionality test.</div><div><b class="k">Conclusion</b>Binding award giving Bangladesh most of the disputed area.</div></div>`,
+ sources:[{t:'PCA Case 2010-16',u:'https://pca-cpa.org/en/cases/18/'}]},
+
+{id:'c-gambia', title:'Genocide Convention: The Gambia v Myanmar', where:'ICJ · The Hague', when:'Filed 2019; provisional measures 23 January 2020; merits hearings January 2026', tags:['Genocide','Rohingya','ICJ'],
+ teaser:'A small West African State sues Myanmar over the Rohingya. Does it need to be injured?',
+ facts:`<p>On 11 November 2019 The Gambia instituted proceedings alleging Myanmar violated the Genocide Convention against the Rohingya. On 23 January 2020 the ICJ unanimously ordered provisional measures. On 22 July 2022 it rejected Myanmar’s preliminary objections, confirming that any State party may invoke obligations erga omnes partes. Several States intervened. Merits hearings were held from 12 to 29 January 2026; the Court then began deliberating. Check the ICJ website for the judgment.</p>`,
+ decide:{q:'Myanmar argues The Gambia has no standing because it is not affected. You are the Court in 2022. Ruling?',o:[
+  {t:'Upheld: only an injured State can sue.',ok:false,why:'The Court held every State party has a common interest in compliance.'},
+  {t:'Rejected: obligations under the Genocide Convention are owed erga omnes partes, so any State party may invoke them.',ok:true,why:'This is the 2022 holding.'},
+  {t:'Bangladesh must bring the case instead.',ok:false,why:'Bangladesh is not required; and Bangladesh has a reservation to Article IX.'}]},
+ questions:['What are provisional measures and are they binding?','Why is Bangladesh relevant though not a party?','What is the link with the ICC situation?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Standing and responsibility under the Genocide Convention.</div><div><b class="k">Rule</b>Genocide Convention Arts I, II, IX; ICJ Statute Art. 41.</div><div><b class="k">Application</b>Common interest gives standing; risk of irreparable harm justified provisional measures.</div><div><b class="k">Conclusion</b>Case proceeds; merits judgment pending at last check.</div></div>`,
+ sources:[{t:'ICJ case page',u:'https://www.icj-cij.org/case/178'},{t:'UN News, January 2026',u:'https://news.un.org/en/story/2026/01/1166782'}]},
+
+{id:'c-icc', title:'ICC: Situation in Bangladesh/Myanmar', where:'International Criminal Court', when:'Jurisdiction ruling 2018; investigation authorised 14 November 2019', tags:['ICC','Deportation','Rohingya'],
+ teaser:'Myanmar is not a party to the Rome Statute. Can the ICC act?',
+ facts:`<p>On 6 September 2018 Pre-Trial Chamber I ruled that the ICC may exercise jurisdiction over deportation of Rohingya to Bangladesh, a State party, because part of the crime was completed on Bangladeshi territory. On 14 November 2019 Pre-Trial Chamber III authorised an investigation. On 27 November 2024 the Prosecutor applied for an arrest warrant for Senior General Min Aung Hlaing.</p>`,
+ decide:{q:'A student says the ICC can never act against nationals of non-party States. Your reply?',o:[
+  {t:'Correct.',ok:false,why:'Article 12(2)(a) confers jurisdiction over crimes on the territory of a State party, whatever the nationality of the accused.'},
+  {t:'Incorrect: if an element of the crime occurs on a State party’s territory (here Bangladesh), the Court may have jurisdiction.',ok:true,why:'This is the reasoning of the 2018 and 2019 decisions.'},
+  {t:'Only if the Security Council refers it.',ok:false,why:'A referral is one route, not the only one.'}]},
+ questions:['What is deportation as a crime against humanity?','What are Bangladesh’s duties to cooperate?','How do ICC and ICJ proceedings differ?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Territorial jurisdiction over cross-border crimes.</div><div><b class="k">Rule</b>Rome Statute Arts 7(1)(d), 12(2)(a), 15.</div><div><b class="k">Application</b>Forced crossing into Bangladesh completes deportation on State party territory.</div><div><b class="k">Conclusion</b>Jurisdiction exists; investigation proceeding.</div></div>`,
+ sources:[{t:'ICC: Bangladesh/Myanmar situation',u:'https://www.icc-cpi.int/bangladesh-myanmar'}]},
+
+{id:'c-climate', title:'Climate change: the ICJ advisory opinion', where:'ICJ · advisory', when:'Advisory opinion, 23 July 2025', tags:['Climate','Advisory opinion','State responsibility'],
+ teaser:'Vanuatu and students push the General Assembly to ask the Court about States’ climate duties.',
+ facts:`<p>By resolution 77/276 (2023) the General Assembly asked the ICJ about States’ obligations on climate change and the legal consequences of breach. On 23 July 2025 the Court unanimously advised that States have obligations under the climate treaties, customary law (including due diligence and prevention of significant harm) and human rights law, and that breach may engage State responsibility, including cessation and reparation.</p>`,
+ decide:{q:'Bangladesh is preparing a diplomatic position. What is accurate?',o:[
+  {t:'The opinion is binding like a judgment between parties.',ok:false,why:'Advisory opinions are not binding as such, though highly authoritative.'},
+  {t:'The opinion is authoritative: climate obligations are legal obligations, and breach can entail State responsibility.',ok:true,why:'This summarises the operative advice.'},
+  {t:'The opinion says only the Paris Agreement matters.',ok:false,why:'The Court also relied on custom and human rights law.'}]},
+ questions:['Why does this matter for Bangladesh?','What is due diligence?','How might loss and damage claims develop?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>States’ obligations regarding climate change.</div><div><b class="k">Rule</b>UNFCCC, Paris Agreement, customary law, human rights law; ILC Articles on State Responsibility.</div><div><b class="k">Application</b>Obligations apply with stringent due diligence.</div><div><b class="k">Conclusion</b>Breach is an internationally wrongful act with legal consequences.</div></div>`,
+ sources:[{t:'ICJ case page',u:'https://www.icj-cij.org/case/187'}]},
+
+{id:'c-nicaragua', title:'Force and self-defence: Nicaragua v United States', where:'ICJ', when:'Judgment on merits, 27 June 1986', tags:['Use of force','Art. 2(4)','Self-defence'],
+ teaser:'Mining harbours and arming rebels. Can it be collective self-defence?',
+ facts:`<p>Nicaragua sued the United States over support for the contras and mining of Nicaraguan ports. The US invoked collective self-defence of El Salvador. The Court held that the prohibition of force and self-defence exist in customary law, that only an armed attack (grave forms of force) triggers self-defence, that the victim State must declare itself attacked and request help, and that the US had violated the non-use of force and non-intervention.</p>`,
+ decide:{q:'A State supplies weapons to rebels in a neighbour. Can the neighbour respond with self-defence strikes?',o:[
+  {t:'Yes, any assistance to rebels is an armed attack.',ok:false,why:'Mere provision of weapons was held not to amount to an armed attack.'},
+  {t:'Not by itself: supplying weapons may be unlawful force or intervention but is not an armed attack triggering Art. 51.',ok:true,why:'This is the Nicaragua holding on gravity.'},
+  {t:'Yes, if the Security Council does nothing in 24 hours.',ok:false,why:'No such rule exists.'}]},
+ questions:['What is the gravity threshold?','Why did custom matter?','Requirements of necessity and proportionality?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Legality of US actions and claim of collective self-defence.</div><div><b class="k">Rule</b>UN Charter Arts 2(4), 51; customary law.</div><div><b class="k">Application</b>No armed attack by Nicaragua; no request from victims; force and intervention were unlawful.</div><div><b class="k">Conclusion</b>US responsible for breaches.</div></div>`,
+ sources:[{t:'ICJ case page',u:'https://www.icj-cij.org/case/70'}]},
+
+{id:'c-expenses', title:'Who pays for peacekeeping? Certain Expenses', where:'ICJ · advisory', when:'Advisory opinion, 20 July 1962', tags:['Peacekeeping','Budget','UN Charter'],
+ teaser:'Some Members refuse to pay for UNEF and ONUC. Are these “expenses of the Organization”?',
+ facts:`<p>Several Member States refused to pay their share for the UN Emergency Force in the Middle East and the operation in the Congo. The General Assembly asked whether those costs were “expenses of the Organization” under Art. 17(2). The Court said yes: action taken to fulfil a purpose of the UN is presumed not ultra vires, and these operations were not enforcement action reserved to the Security Council.</p>`,
+ decide:{q:'A Member says it will not pay assessed peacekeeping contributions it voted against. Lawful?',o:[
+  {t:'Yes, voting against releases it.',ok:false,why:'Assessments under Art. 17(2) bind all Members.'},
+  {t:'No: apportioned expenses bind all Members; persistent arrears can trigger Art. 19.',ok:true,why:'This applies Certain Expenses and Art. 19.'},
+  {t:'Only the Security Council can assess contributions.',ok:false,why:'The General Assembly approves and apportions the budget.'}]},
+ questions:['How does this relate to 2025–26 peacekeeping budget cuts?','What is Art. 19?','Why did the Court presume legality?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Are UNEF and ONUC costs expenses of the Organization?</div><div><b class="k">Rule</b>Charter Arts 11, 14, 17, 24.</div><div><b class="k">Application</b>Operations served UN purposes and were not Chapter VII enforcement.</div><div><b class="k">Conclusion</b>Yes; Members must pay.</div></div>`,
+ sources:[{t:'ICJ case page',u:'https://www.icj-cij.org/case/49'}]},
+
+{id:'c-reparation', title:'Can the UN sue? Reparation for Injuries', where:'ICJ · advisory', when:'Advisory opinion, 11 April 1949', tags:['Legal personality','UN staff'],
+ teaser:'A UN mediator is assassinated. Can the Organization claim compensation?',
+ facts:`<p>After the assassination of UN mediator Count Folke Bernadotte in Jerusalem in 1948, the General Assembly asked whether the UN could bring an international claim. The Court held the UN has international legal personality and can claim reparation for damage to itself and to its agents (functional protection), even against a non-member.</p>`,
+ decide:{q:'A UN peacekeeper is killed by State forces. Who can claim?',o:[
+  {t:'Only the peacekeeper’s national State.',ok:false,why:'The UN can also claim through functional protection.'},
+  {t:'The UN may claim for itself and the agent; the national State may also claim, and the two should be reconciled.',ok:true,why:'This is the Reparation holding.'},
+  {t:'No one: the UN is not a legal person.',ok:false,why:'The Court affirmed the UN’s legal personality.'}]},
+ questions:['What is implied powers?','What does functional protection mean?','Relevance for Bangladeshi peacekeepers?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Does the UN have capacity to bring international claims?</div><div><b class="k">Rule</b>Charter Arts 100, 104, 105; implied powers.</div><div><b class="k">Application</b>To perform its functions the UN must protect its agents.</div><div><b class="k">Conclusion</b>The UN is an international person with capacity to claim.</div></div>`,
+ sources:[{t:'ICJ case page',u:'https://www.icj-cij.org/case/4'}]},
+
+{id:'c-haiti', title:'Cholera in Haiti and UN accountability', where:'Haiti · MINUSTAH', when:'Outbreak 2010; SG apology 1 December 2016', tags:['Peacekeeping','Immunity','Accountability'],
+ teaser:'Cholera spreads from a peacekeepers’ camp. Victims sue the UN in New York.',
+ facts:`<p>In October 2010 cholera broke out in Haiti, with strong evidence linking it to sewage from a MINUSTAH base. Hundreds of thousands fell ill and nearly 10,000 died. The UN rejected claims as not receivable. US courts upheld UN immunity (Georges v United Nations, 2d Cir. 2016). On 1 December 2016 Secretary-General Ban Ki-moon apologised in the General Assembly and announced a “new approach”, but voluntary funding fell far short.</p>`,
+ decide:{q:'You advise a troop contributor. What lesson applies?',o:[
+  {t:'Immunity means no responsibility at all.',ok:false,why:'Immunity bars national courts but the UN must provide alternative settlement (Convention on Privileges and Immunities s. 29).'},
+  {t:'Strict environmental and medical screening and waste management, plus real remedies for victims, are legal and moral duties.',ok:true,why:'This reflects lessons from Haiti and UN environmental policy for missions.'},
+  {t:'Victims should sue the troop contributor only.',ok:false,why:'Responsibility questions are complex; the UN acknowledged its moral responsibility.'}]},
+ questions:['What does s. 29 of the 1946 Convention require?','Why did UN immunity hold in US courts?','What reforms followed?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Accountability of the UN for harm caused by a mission.</div><div><b class="k">Rule</b>Charter Art. 105; 1946 Convention ss. 2 and 29.</div><div><b class="k">Application</b>Immunity was upheld, but the duty to provide alternative remedies was not met.</div><div><b class="k">Conclusion</b>An accountability gap; apology and new approach only partly filled it.</div></div>`,
+ sources:[{t:'UN: Secretary-General remarks, 1 Dec 2016',u:'https://www.un.org/sg/en/content/sg/statement/2016-12-01/secretary-generals-remarks-general-assembly-new-approach-address'}]},
+
+{id:'c-srebrenica', title:'Srebrenica and Dutchbat', where:'Netherlands · Supreme Court', when:'Nuhanović 6 September 2013; Mothers of Srebrenica 19 July 2019', tags:['Peacekeeping','Attribution','Responsibility'],
+ teaser:'Peacekeepers send men out of their compound to Bosnian Serb forces. Who is responsible?',
+ facts:`<p>In July 1995 Bosnian Serb forces overran the UN “safe area” of Srebrenica, protected by a Dutch battalion. Men who had sheltered at the Dutchbat compound were sent out and killed. In Nuhanović (2013) the Dutch Supreme Court attributed conduct to the Netherlands, which had effective control over the eviction. In Mothers of Srebrenica (2019) it held the Netherlands liable for 10% of the damages for the men evicted, reflecting their slim chance of survival.</p>`,
+ decide:{q:'You are a contingent commander under UN command. Who answers for your conduct?',o:[
+  {t:'Only the UN, always.',ok:false,why:'Conduct may be attributed to the sending State where it has effective control.'},
+  {t:'Possibly both the UN and the sending State, depending on effective control over the specific conduct.',ok:true,why:'Dutch courts applied effective control (cf. ILC ARIO Art. 7).'},
+  {t:'No one, peacekeepers have immunity.',ok:false,why:'Immunity in host States does not erase State responsibility at home.'}]},
+ questions:['What is dual attribution?','What did the Mothers of Srebrenica case decide about the UN itself?','Lessons for protection of civilians mandates?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Attribution of peacekeepers’ conduct.</div><div><b class="k">Rule</b>ILC ARIO Art. 7; Dutch tort law.</div><div><b class="k">Application</b>The Dutch government controlled the evacuation decisions.</div><div><b class="k">Conclusion</b>The Netherlands bore partial responsibility; the UN itself kept immunity.</div></div>`,
+ sources:[{t:'Rechtspraak: Mothers of Srebrenica (2019)',u:'https://uitspraken.rechtspraak.nl/inziendocument?id=ECLI:NL:HR:2019:1284'}]},
+
+{id:'c-rana', title:'Rana Plaza and the Accord', where:'Savar, Bangladesh', when:'Collapse 24 April 2013', tags:['Labour','Business and human rights','Safety'],
+ teaser:'Cracks appear in an eight-storey building. Workers are ordered back in.',
+ facts:`<p>On 24 April 2013 the Rana Plaza building in Savar collapsed, killing more than 1,100 garment workers. Cracks had been seen the day before. In May 2013 brands and unions signed the Accord on Fire and Building Safety in Bangladesh, with inspections and remediation. The Bangladesh Labour Act 2006 was amended in 2013. In 2020 the RMG Sustainability Council took over in-country work, and in 2021 the International Accord was agreed. Criminal cases against the building owner and others continue.</p>`,
+ decide:{q:'A factory manager sees cracks. Buyers’ orders are due. What should be done?',o:[
+  {t:'Keep working; evacuating loses the order.',ok:false,why:'This is what happened at Rana Plaza.'},
+  {t:'Stop work, evacuate, call engineers and the inspectorate; workers have a right to refuse unsafe work.',ok:true,why:'Labour law and the Accord protect the right to refuse unsafe work.'},
+  {t:'Ask buyers what to do.',ok:false,why:'Safety duties lie with the employer now.'}]},
+ questions:['What are the UN Guiding Principles on Business and Human Rights?','How did the Accord differ from voluntary codes?','What does the Labour Act require?'],
+ solution:`<div class="irac"><div><b class="k">Issue</b>Who is responsible for safety in supply chains?</div><div><b class="k">Rule</b>Bangladesh Labour Act 2006; Building Code; UNGPs 2011.</div><div><b class="k">Application</b>Owners, the State and brands each had duties that failed.</div><div><b class="k">Conclusion</b>Binding, enforceable agreements and inspection reform followed.</div></div>`,
+ sources:[{t:'ILO: Rana Plaza',u:'https://www.ilo.org/resource/news/rana-plaza-ten-years-what-has-changed'},{t:'International Accord',u:'https://internationalaccord.org/'},{t:'Bangladesh Labour Act 2006 (bdlaws)',u:'http://bdlaws.minlaw.gov.bd/act-952.html'}]}
+];
