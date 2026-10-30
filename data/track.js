@@ -1,8 +1,8 @@
 window.TRACK={modules:[]};
 TRACK.meta={
  code:'UNBD-LAW',storeKey:'zz-unbdlaw-v1',
- short:'Bangladesh Law & UN Law',
- full:'ZyeemZia™ Bangladesh Law & United Nations Law',
+ short:'UN & Bangladesh Legal Systems',
+ full:'ZyeemZia™ United Nations & Bangladesh Legal Systems',
  tagline:'One Constitution, one Charter. Know both, teach both.',
  lead:'An interactive course for anyone who needs to understand Bangladesh’s legal system and the United Nations legal order: the Constitution and its 2024–2026 reform process, criminal and civil law, writs and fundamental rights, the UN Charter, human rights treaties, peacekeeping law, the law of the sea, rivers, climate and international criminal justice, with the trainer methods to teach it all. Updated to October 2026.',
  examSize:40,passMark:80,distinctionMark:90,
