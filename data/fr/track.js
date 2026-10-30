@@ -1,8 +1,8 @@
 window.TRACK={modules:[]};
 TRACK.meta={
  code:'UNBD-LAW',storeKey:'zz-unbdlaw-v1',
- short:'Droit du Bangladesh et droit des Nations Unies',
- full:'ZyeemZia™ Droit du Bangladesh et droit des Nations Unies',
+ short:'Systèmes juridiques des Nations Unies et du Bangladesh',
+ full:'ZyeemZia™ Systèmes juridiques des Nations Unies et du Bangladesh',
  tagline:'Une Constitution, une Charte. Connaître les deux, enseigner les deux.',
  lead:'Un cours interactif pour toute personne qui doit comprendre le système juridique du Bangladesh et l’ordre juridique des Nations Unies : la Constitution et sa réforme de 2024–2026, le droit pénal et civil, les writs et les droits fondamentaux, la Charte des Nations Unies, les traités relatifs aux droits de l’homme, le droit du maintien de la paix, le droit de la mer, les fleuves, le climat et la justice pénale internationale, avec les méthodes pédagogiques pour enseigner le tout. Mis à jour en octobre 2026.',
  examSize:40,passMark:80,distinctionMark:90,
