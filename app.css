@@ -1,6 +1,8 @@
 /* header */
 /* Form controls use the page font; browsers otherwise fall back to Arial. */
 button, input, select, textarea { font-family: inherit; }
+/* Small print never drops below 12px on screen. */
+small { font-size: max(12px, .85em); }
 .skip{position:absolute;left:-999px;top:8px;z-index:100;background:var(--acc);color:#fff;padding:8px 14px;border-radius:8px}
 .skip:focus{left:8px}
 .top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
